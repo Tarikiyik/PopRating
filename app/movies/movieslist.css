@@ -1,0 +1,165 @@
+.movies-wrapper{
+    margin: 0 5% 0 5%;
+}
+
+.movies-container{
+    min-height: 140vh;
+    height: auto;
+    border-left: 4px solid #303030;
+    border-right: 4px solid #303030;
+    padding-bottom: 16px; 
+    background: rgba(37, 37, 37,0.4);
+}
+
+.movies-upper-container{
+    height: 120px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin: 0 auto;
+    
+}
+
+.movies-lower-container {
+    width: 95%;
+    min-height: 900px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.movie-option{
+    color: white;
+    display: flex;
+    font-size: 32px;
+    align-items: flex-end;
+}
+.movie-option a {
+    margin: 0 10px;
+}
+
+.movie-option .active{
+    font-weight: bold;
+}
+
+.movie-option .non-active{
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+.movie-option .non-active:hover{
+    opacity: 0.9;
+}
+
+.dd-add{
+    background: #252525;
+    border-radius: 12px;
+    width: 140px;
+}
+
+.dd-add:hover{
+    background: rgb(50, 50, 50);
+}
+
+.dd-add-items{
+    max-height: 300px;
+    width: 150px;
+    overflow-y: auto;
+    color: white;
+    border:4px solid #303030;
+    border-radius: 12px;
+    background: #252525;
+}
+
+.dd-add-item:hover{
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 8px;
+}
+
+
+.movies-h-divider{
+    background: rgb(60, 60, 60);
+    width: 96%;
+    height: 2px;
+    margin: 10px 0;
+}
+
+.overlay-button{
+    font-size: 32px;
+    left: 24%;
+}
+
+.overlay-link{
+    padding: 2px 24px;
+}
+
+.overlay1-h-divider{
+    width: 70%;
+    height: 2px;
+}
+
+.overlay2-h-divider{
+    width: 80%;
+    height: 2px;
+}
+
+.overlay-star{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.overlay-star .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20;
+    font-size: 30px;
+}
+
+.slider-button {
+    top: 49%;
+    height: 86%;
+    width: 45px;
+}
+
+.slider-item {
+    position: relative;
+    border-radius: 10px;
+    height: 480px;
+    min-width: 332px;
+    max-width: 312px;
+    background: white;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.slider-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0, 0, 0, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slider-item:hover .overlay{
+    opacity: 1;
+}
+
+.slider-item img{
+    height: 480px;
+}
